@@ -1,0 +1,80 @@
+<html> 
+   <head> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    
+    
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+     <script src="cal.js"></script>
+     <link rel="stylesheet" href="cal.css">
+	<title>DIGITAL CALCULATOR</title>
+
+   </head> 
+   <!-- create table -->
+   <body class="color" > 
+    <div class="container">
+      <center><h2>Calculator</h2><center>
+      
+      <main class="bg-light">
+      <table border="5" class="class"> 
+         <tr> 
+            <td colspan="4"><input type="text" id="result" style="font-size : 30px"/></td> 
+            <!-- clr() function will call clr to clear all value -->
+         </tr> 
+         <tr> 
+            <!-- create button and assign value to each button -->
+            <!-- dis("1") will call function dis to display value -->
+            <td><input type="button" value="1" onclick="dis('1')" /> </td> 
+            <td><input type="button" value="2" onclick="dis('2')" /> </td> 
+            <td><input type="button" value="3" onclick="dis('3')" /> </td> 
+            <td><input type="button" value="+" onclick="dis('+')" /> </td>
+            
+            
+         </tr> 
+         <tr> 
+            <td><input type="button" value="4" onclick="dis('4')" /> </td>  
+            <td><input type="button" value="5" onclick="dis('5')" /> </td> 
+            <td><input type="button" value="6" onclick="dis('6')" /> </td>
+            <td><input type="button" value="-" onclick="dis('-')" /> </td>
+            
+         </tr> 
+         <tr> 
+            <td><input type="button" value="7" onclick="dis('7')" /> </td> 
+            <td><input type="button" value="8" onclick="dis('8')" /> </td>
+            <td><input type="button" value="9" onclick="dis('9')" /> </td> 
+            <td><input type="button" value="*" onclick="dis('*')" /> </td>
+              
+         </tr> 
+         <tr> 
+            <td><input type="button" value="Clr" onclick="clr()" /> </td>
+            <td><input type="button" value="0" onclick="dis('0')" /> </td> 
+            <td><input type="button" value="=" onclick="solve()" /> </td>
+            <td><input type="button" value="/" onclick="dis('/')" /> </td>
+             
+            
+         </tr> 
+         <tr> 
+            <td><input type="button"  value="%" onclick='c("not defined ")' /></td>
+            <td><input type="button"  value="&#8730;" onclick='c("not defined ")' /></td>
+            <td><input type="button"  value="&#8592;" onclick='back()' /></td>
+            <td> <input type="button" value="." onclick='math(".")' /></td>
+            
+         </tr> 
+       </table> 
+      
+      <div class="class">
+         <h3>History</h3>
+         <div id="history" class="text"></div>
+         
+      </div>
+   </main>
+   </div>
+   </body> 
+</html> 
